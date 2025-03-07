@@ -1,0 +1,143 @@
+:root{
+    --nav-bg-color:black;
+    --head-color:#40afb9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+}
+
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: var(--head-color);
+    text-align: center;
+    padding: 1rem;
+}
+header h1 small{
+    font-size: 1.5rem;
+    color: #41aeb4;
+}
+nav{
+    display: flex;
+}
+ header nav {
+	background-color:var(--nav-bg-color);
+	margin: 0 auto;
+	max-width: 100%;
+    padding: 1rem;
+}
+nav a {
+    display: block;
+	color: #fff;
+    font-weight: 600;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+    color: #40afb9;
+}
+
+.active {
+	color: yellow;
+}
+/* larger/wider views **************************/
+@media (min-width: 768px) {
+	nav {
+		display: flex;
+        justify-content: space-evenly;
+	}
+
+	nav a {
+		flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+}
+
+h2{
+    text-align: center;
+    padding: 1rem;
+}
+.layout{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+
+}
+main{
+    flex: 2;
+    display: grid;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    gap: 1rem;
+
+}
+
+.card-header{
+    background-color: #41aeb4;
+    color: #fff;
+    height: 60px;
+}
+.card .card-body{
+    padding: 1rem;
+}
+.card .card-body img{
+    float: right;
+    border: 1px solid #ccc;
+    margin: 0 1rem;
+}
+.card .card-body p{
+    padding: 2rem;
+}
+.card .card-footer{
+    padding: 2rem;
+    width: 70%;
+}
+.card-footer h3{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem ;
+}
+.card .card-footer img{
+    float: left;
+    margin: 1rem;
+}
+aside{
+    flex:1;
+    display: grid;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+aside ul{
+    margin: 2rem;
+    justify-content: center;
+}
+aside ul li{
+    margin-top: 10px;
+}
+aside ul li a{
+    color:#41aeb4;
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--nav-bg-color);
+}
+footer p{
+    color: #fff;
+    padding: 0.5rem 0;
+}
+#lastModified{
+    color: #41aeb4;
+    font-size: 0.8rem;
+}
