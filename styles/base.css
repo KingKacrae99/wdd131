@@ -20,7 +20,7 @@ header h1{
 }
 header h1 small{
     font-size: 1.5rem;
-    color: #41aeb4;
+    color: #21828a;
 }
 nav{
     display: flex;
@@ -42,7 +42,7 @@ nav a {
 
 nav a:hover {
 	text-decoration: underline;
-    color: #40afb9;
+    color: #1a7980;
 }
 
 .active {
@@ -83,8 +83,8 @@ main{
 }
 
 .card-header{
-    background-color: #41aeb4;
-    color: #fff;
+    background-color: #21828a;
+    color: #000;
     height: 60px;
 }
 .card .card-body{
