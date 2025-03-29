@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria | WDD131</title>
+    <meta name="Description" content="My country page.">
+    <meta name="Author" content="King Emmanuel Aguomba">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+            <h1>NIGERIA</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large-img.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium-img.webp" media="(min-width: 550px)">
+                <img src="images/hero-small-img.webp" alt="hero-img" width="400" height="200">
+            </picture>
+        </div>
+        <section>
+            <div class="data">
+                <div class="data-header">
+                    <h2>Data</h2>
+                </div>
+                <ul>
+                    <li><strong>Area:</strong> 923,768 sq km</li>
+                    <li><strong>population:</strong> 234.6 million</li>
+                    <li><strong>Capital:</strong>Abuja</li>
+                    <li><strong>Languages:</strong> Igbo,Hausa, Yoruba</li>
+                    <li><strong>Currency:</strong> Naira</li>
+                    <li><strong>Time Zone:</strong> UTC+1 (West Africa Time Zone) </li>
+                    <li><strong>Calling code:</strong>+234</li>
+                    <li><strong>Internet TLD:</strong> .ng</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="weather">
+                <div class="data-header">
+                    <h2>Weather</h2>
+                    <img src="images/cloudy_sun_icon.svg" alt="Weather">
+                </div>
+                <ul>
+                    <li><strong>Temperature:</strong> 26 C</li>
+                    <li><strong>Condition:</strong> Mostly Sunny</li>
+                    <li><strong>Wind:</strong> 6 km/h </li>
+                    <li><strong>Wind Chill:</strong> <span id="wind-chill"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span>  🧑‍💻 King Emmanuel Aguomba ⛳ Nigeria </p>
+        <small><span id="last-modified"></span> </small>
+    </footer>
+</body>
+</html>
