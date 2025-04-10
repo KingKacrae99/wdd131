@@ -1,0 +1,29 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 1.25rem;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header{
+    text-align: center;
+}
+h1,h2{
+    color:#1e88e5;
+}
+section{
+    margin-bottom: 30px;
+}
+.color-box{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.blue{
+    background-color: #1e88e5;
+}
+.light{
+    background-color: #f4f4f9;
+    border: 1px solid #ccc;
+}
