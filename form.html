@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer ></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="productName">Product Name </label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Choose a Product...</option>
+            </select>
+            <label>Overall Rating</label>
+            <div class="rating">
+                <label for="star1">⭐
+                    <input type="radio" id="star1" name="rating" value="1" required >
+                </label>
+                <label for="star2">⭐⭐
+                    <input type="radio" id="star2" name="rating" value="2" required >
+                </label>
+                <label for="star3">⭐⭐⭐
+                    <input type="radio" id="star3" name="rating" value="3" required >
+                </label>
+                <label for="star4">⭐⭐⭐⭐
+                    <input type="radio" id="star4" name="rating" value="4" required >
+                </label>
+                <label for="star5">⭐⭐⭐⭐⭐
+                    <input type="radio" id="star5" name="rating" value="5" required >
+                </label>
+            </div>
+
+            <label for="installDate">Date of Installation
+                <input type="date" id="installDate" name = "installDate" required >
+            </label>
+
+            <fieldset>
+                <legend>Which features did you find useful?</legend>
+                <label><input type="checkbox" name="features" value="Durability" > Durability </label>
+                <label><input type="checkbox" name="features" value="Ease of Use" > Ease of Use </label>
+                <label><input type="checkbox" name="features" value="Performance"> Performance </label>
+                <label><input type="checkbox" name="features" value="Design"> Design </label>
+            </fieldset>
+
+            <label for="writtenReview">Written Review<small>(Optional)</small>
+                <textarea id="writtenReview" name="writtenReview"></textarea>
+            </label>
+            <label for="userName">Your Name<small>(Optional)</small>
+                <input type="text" id="userName" name="userName">
+            </label>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 🧑‍💻 King Emmanuel Aguomba 🚩</p>
+    </footer>
+</body>
+</html>
