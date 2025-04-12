@@ -1,0 +1,107 @@
+@media screen and (min-width:769px) {
+    
+    header{
+        width: 100%;
+        padding: .5rem;
+        position: fixed;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.8) ;
+    }
+    main .hero{
+        position: relative;
+    }
+    main .hero::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+        z-index: 1;
+    }
+    main .hero img{
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 0;
+    }
+    
+    main .hero h1{
+        position: absolute;
+        z-index: 2;
+        color: #fff;
+        font-size: 2rem;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #exclamation{
+        color: #1e88e5;
+    }
+    main .hero p{
+        position: absolute;
+        z-index: 2;
+        color: #fff;
+        font-size: 1rem;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: .5rem;
+    }
+    main .hero .cta {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        text-align: center;
+    }
+    /*---- Section Styling -----*/
+    section{
+        margin: 2rem;
+    }
+
+    section .list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem;
+        margin: 1rem;
+   }
+
+/*------Calculator page-------*/
+main .hero .calculator {
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+main .hero .calculator h2{
+    font-size: 2rem;
+    color: #fff;
+
+
+}
+.input-box label {
+    color: #fff;
+}
+
+#result{
+    font-size: 1rem;
+    color: #fff;
+}
+#result span{
+    color:#1e88e5;
+}
+}

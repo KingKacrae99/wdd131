@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/age-style.css">
+    <link rel="stylesheet" href="styles/large-age-style.css">
+    <script src="scripts/calculator.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Age Wiz - Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+       </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/larger-hero-img.webp" media="(min-width: 769px)">
+                <source srcset="images/medium-hero-img.webp" media="(min-width: 500px)">
+                <img src="images/small-hero-img.webp" alt="Hero-image" width="400">
+            </picture>
+            <h1>Discover Your Exact Age Instantly</h1>
+            <p>Find out your exact age in years, months, and days with just one click!</p>
+            <div class="cta">
+                <a href="calculator.html">Get Started</a>
+            </div>
+        </div>
+        <section>
+            <h2>About the Project</h2>
+            <div class="list">
+                <img src="images/small-hero-img1.webp" alt="calculator" loading="lazy" width="300" height="200">
+                <p>Age Calculator is a web-based tool designed to help users determine their exact age in years, months,
+                    and days. It was built using modern HTML, CSS, and JavaScript technologies. The goal of this project
+                   is to provide an accurate and interactive way for people to calculate their age for personal or professional use.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Developer</h2>
+            <div class="list">
+                <img src="images/Mypassport.webp" alt="calculator" loading="lazy" width="300" height="200">
+                <p>This application was developed by King Emmanuel Aguomba as part of a course project
+                    to demonstrate core web development skills including form handling, DOM manipulation,
+                    responsive design, and localStorage.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>App Features</h2>
+            <ul>
+                <li>Real-time age calculation</li>
+                <li>Fully responsive across all devices</li>
+                <li>Save recent data with localStorage</li>
+                <li>Accessble and simple UI</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span>  🧑‍💻 King Emmanuel Aguomba ⛳ Nigeria </p>
+    </footer>
+</body>
+</html>
