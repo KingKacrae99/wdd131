@@ -80,18 +80,17 @@ main .hero .cta {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
 }
+
 main .hero .cta:hover{
     background-color: #fff;
     color: var(--primary-color);
     border: var(--primary-color);
 }
 
-main .hero .cta a{
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-}
 /*---- Section Styling -----*/
 section{
     margin: 1rem;
@@ -122,6 +121,9 @@ section ul{
     list-style: none;
     padding: 1.5rem;
     font-size: 1rem;
+}
+section .about-feat{
+    text-align: center;
 }
 section ul li{
     padding: .5rem;
